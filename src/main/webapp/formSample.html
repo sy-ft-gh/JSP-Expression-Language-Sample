@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ユーザー登録もどき</title>
+	</head>
+	<body>
+		<!-- actionでURL、methodでPOST/GETを指定  -->
+		<form action="/Expression-Language-Sample/FormSampleServlet" method="post">
+			名前：<br>
+			<input type="text" name="name" value="菅総理大臣"><br>
+			<!-- 住所は配列とするため同じnameで作成  -->
+			住所：<br>
+			<input type="text" name="address" value="東京都"><br>
+			<input type="text" name="address" value="千代田区"><br>
+			<input type="text" name="address" value="永田町"><br>
+			性別：<br>
+			男<input type="radio" name="gender" value="0">
+			女<input type="radio" name="gender" value="1">
+			<!-- type=submit がアクションで指定された先への遷移のトリガーとなる  -->
+			<input type="submit" value="登録">
+		</form>
+  	</body>
+</html>
